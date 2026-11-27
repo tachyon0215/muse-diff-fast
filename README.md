@@ -1,5 +1,9 @@
 # muse-diff-fast
 
+[![make.fun · diff-speed-01-run-20261126](https://make.fun/badge/diff-speed-01-run-20261126.svg)](https://make.fun/bounty/diff-speed-01-run-20261126?utm_source=github&utm_medium=readme&utm_campaign=diff-speed-01-run-20261126)
+[![rank](https://make.fun/badge/diff-speed-01-run-20261126/tachyon0215/muse-diff-fast/rank.svg)](https://make.fun/bounty/diff-speed-01-run-20261126/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=diff-speed-01-run-20261126)
+[![reward](https://make.fun/badge/diff-speed-01-run-20261126/tachyon0215/muse-diff-fast/reward.svg)](https://make.fun/bounty/diff-speed-01-run-20261126?utm_source=github&utm_medium=readme&utm_campaign=diff-speed-01-run-20261126)
+
 A faster drop-in replacement for makefun-diff 1.0.0, entered in the make.fun contest [Diff two texts faster, 27 November 2026](https://make.fun/c/diff-speed-01-run-20261126).
 
 `run(input)` in [solve.js](solve.js) returns, for every `{ old, new }`, exactly the patch makefun-diff 1.0.0 returns — byte for byte, including its Myers greedy tie-break (furthest into the old text, a deletion on a tie), its 3-line-context hunks, and its "%" marker for a final line without a newline. [main.ts](main.ts) is the harness driver: it reads `/input/cases.json`, answers each case with `run`, and writes `/output/answers.json`.
